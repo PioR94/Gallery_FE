@@ -1,0 +1,17 @@
+.wrapper-table {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.add {
+  width: 7rem;
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  width: 16rem;
+  justify-content: space-around;
+  margin: 20px;
+}

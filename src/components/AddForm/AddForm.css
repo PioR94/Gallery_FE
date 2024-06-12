@@ -1,0 +1,28 @@
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.div-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.arrow {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  color: #6b6767;
+  cursor: pointer;
+}

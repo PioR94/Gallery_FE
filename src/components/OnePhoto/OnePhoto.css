@@ -1,0 +1,34 @@
+.wrapper-one-photo {
+  display: flex;
+  width: 1200px;
+
+  /* border: 1px solid black; */
+  background-color: white;
+  margin-top: 30px;
+  zoom: 0.8;
+}
+.photo {
+  display: flex;
+  /* background-color: green; */
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper-one-photo.photo-right {
+  flex-direction: row-reverse;
+}
+h2 {
+  font-size: 35px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 40%;
+  padding: 30px;
+  font-family: Roboto;
+  line-height: 35px;
+  font-size: 20px;
+  color: #817d7d;
+}
