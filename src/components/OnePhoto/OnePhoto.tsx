@@ -1,6 +1,6 @@
 import React from 'react';
-import { Photo, PhotoRecord } from '../../types/photo';
-import { Divider } from 'primereact/divider';
+import { PhotoRecord } from '../../types/photo';
+
 import './OnePhoto.css';
 
 export const OnePhoto = ({ id, title, photo, description, className }: PhotoRecord) => {

@@ -13,7 +13,7 @@ export const AllPhotos = () => {
 
   const [photos, setPhotos] = useState<JSX.Element[]>([]);
 
-  const photosPerPage = 5;
+  const photosPerPage = 4;
 
   const navigate = useNavigate();
 

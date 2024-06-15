@@ -19,10 +19,10 @@ export const Table: React.FC = () => {
     const fetchData = async () => {
       try {
         const data = await downloadData(`${baseUrl}/get-all`);
-        console.log('Otrzymane dane:', data); // Logowanie otrzymanych danych
+      
         setPhotos(Array.isArray(data) ? data : []);
       } catch (error) {
-        console.error('Błąd podczas pobierania danych:', error);
+        console.error('Download data error', error);
       } finally {
         setLoading(false);
       }
@@ -38,21 +38,19 @@ export const Table: React.FC = () => {
     setPhotos(updatedPhotos);
     try {
       const response = await updateData(newData, '/update-photo');
-      console.log('Odpowiedź po aktualizacji:', response); // Logowanie odpowiedzi po aktualizacji
     } catch (error) {
-      console.error('Błąd podczas aktualizacji zdjęcia:', error);
+      console.error('Error updating photo:', error);
     }
   };
 
   const handleDelete = async (rowData: PhotoRecord) => {
     try {
       const response = await sendDt({ id: rowData.id }, '/delete-photo');
-      console.log('Odpowiedź po usunięciu:', response); // Logowanie odpowiedzi po usunięciu
       setPhotos((prevPhotos) =>
         prevPhotos.filter((photo) => photo.id !== rowData.id),
       );
     } catch (error) {
-      console.error('Błąd podczas usuwania zdjęcia:', error);
+      console.error('Photo deletion error::', error);
     }
   };
 
